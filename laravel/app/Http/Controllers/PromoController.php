@@ -25,7 +25,7 @@ class PromoController extends Controller
                 'desc' => 'Sama juga kek yang diatas dan biasanya ini panjang lalu banyak buat simulasi doangg'
             ]
         ];
-        return view('welcome', [
+        return view('promo', [
             'value' => $val
         ]);
     }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PromoController;
 
@@ -14,4 +15,4 @@ use App\Http\Controllers\PromoController;
 |
 */
 
-Route::get('/', [PromoController::class, 'index']);
+Route::get('/', [homeController::class, 'index']);

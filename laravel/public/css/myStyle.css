@@ -1,0 +1,66 @@
+/* START CSS UTILITY */
+
+h1, h2, h3, h4, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* END CSS UTILITY */
+
+/* START CSS HOME */
+
+#jumbotron {
+    background-image: url('img/Jumbotron1.webp');
+    height: 406px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 97px;
+    margin-bottom: 97px;
+}
+
+#welkom {
+    font-size: 32px;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #023E8A;
+}
+
+
+#tombolCard .card {
+    height: 200px;
+    width: 174px;
+}
+
+#infTerkait {
+    color: #1D3557;
+}
+
+#contInf {
+    margin-bottom: 20px;
+}
+
+#cardInf {
+    width: 290px;
+    height: 340px;
+}
+
+#footer {
+    background-color: #023E8A;
+    color: white;
+}
+
+/* END CSS HOME */
+
+/* START CSS RUMAH SAKIT */
+
+/* END CSS RUMAH SAKIT */
+
+/* START CSS APOTIK */
+
+/* END CSS APOTIK */
+
+/* START CSS KONSULTASI */
+
+/* END CSS KONSULTASI */

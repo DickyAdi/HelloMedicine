@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('edukasis', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->binary('foto');
+            $table->text('exert');
+            $table->text('body');
             $table->timestamps();
         });
     }

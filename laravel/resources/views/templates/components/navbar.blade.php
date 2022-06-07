@@ -4,7 +4,7 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item mr-2">
-                    <a class="nav-link"  href="#">Home</a>
+                    <a class="nav-link"  href="/">Home</a>
                 </li>
                 <li class="nav-item mr-2">
                     <a class="nav-link" href="#">Rumah Sakit terdekat</a>
@@ -13,7 +13,7 @@
                     <a class="nav-link" href="#">Apotik terdekat</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Konsultasi</a>
+                    <a class="nav-link" href="/konsultasi">Konsultasi</a>
                 </li>
             </ul>
         </div>

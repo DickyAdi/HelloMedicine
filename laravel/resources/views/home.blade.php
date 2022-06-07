@@ -19,7 +19,7 @@
                     <div class="col-md-8" id="tombolCard">
                         <div class="row">
                             <div class="col-3 d-flex align-items-stretch align-items-center">
-                                <a href="#" style="text-decoration: none;color: black">
+                                <a href="/konsultasi" style="text-decoration: none;color: black">
                                     <div class="card">
                                         <img src="img/tombolKonsultasi.webp"
                                             class="w-80 rounded-circle card-img-top mx-auto d-block" alt="konsultasi">
@@ -52,7 +52,7 @@
                                 </a>
                             </div>
                             <div class="col-3 d-flex align-items-stretch align-items-center">
-                                <a href="#" style="text-decoration: none;color: black">
+                                <a href="/edukasi" style="text-decoration: none;color: black">
                                     <div class="card">
                                         <img src="img/tombolEdukasi.webp"
                                             class="w-80 rounded-circle card-img-top mx-auto d-block" alt="konsultasi">
@@ -89,7 +89,7 @@
             <div class="col" id="cardInf">
                 <div class="row">
                     <div class="col-3 align-items-center">
-                        <a href="#" style="text-decoration: none; color:black">
+                        <a href="/konsultasi" style="text-decoration: none; color:black">
                             <div class="card">
                                 <img src="{{ asset('/img/konsultasi.jpg') }}" style="border-radius: 5px;">
                                 <div class="card-body">
@@ -119,7 +119,7 @@
                         </a>
                     </div>
                     <div class="col-3 align-items-center">
-                        <a href="#" style="text-decoration: none; color:black">
+                        <a href="/edukasi" style="text-decoration: none; color:black">
                             <div class="card">
                                 <img src="{{ asset('/img/edukasi.jpeg') }}" style="border-radius: 5px;">
                                 <div class="card-body">
@@ -133,4 +133,5 @@
         </div>
     </div>
 </div>
+@include('templates/components/footer')
 @endsection

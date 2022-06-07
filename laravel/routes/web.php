@@ -3,6 +3,11 @@
 use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PromoController;
+use App\Http\Controllers\KonsultasiController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\CustomerPremiumController;
+use App\Http\Controllers\DokterController;
+use App\Http\Controllers\edukasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +21,5 @@ use App\Http\Controllers\PromoController;
 */
 
 Route::get('/', [homeController::class, 'index']);
+Route::get('/konsultasi', [KonsultasiController::class, 'index']);
+Route::get('/edukasi', [edukasiController::class, 'index']);

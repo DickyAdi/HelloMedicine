@@ -4,6 +4,36 @@ h1, h2, h3, h4, p, a {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #023E8A;
+}
+
+.navbar a {
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+}
+
+#footer a {
+    opacity: 0.5;
+}
+
+#footer a:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#footer {
+    background-color: #023E8A;
+    color: white;
+    position: relative;
+}
 /* END CSS UTILITY */
 
 /* START CSS HOME */
@@ -22,15 +52,15 @@ h1, h2, h3, h4, p, a {
     font-size: 32px;
 }
 
-.navbar {
-    font-family: 'Roboto', sans-serif;
-    background-color: #023E8A;
-}
-
-
 #tombolCard .card {
     height: 200px;
     width: 174px;
+    opacity: 1;
+}
+
+#tombolCard .card:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 0.6;
 }
 
 #infTerkait {
@@ -41,14 +71,13 @@ h1, h2, h3, h4, p, a {
     margin-bottom: 20px;
 }
 
-#cardInf {
-    width: 290px;
-    height: 340px;
+#cardInf .card {
+    opacity: 1;
 }
 
-#footer {
-    background-color: #023E8A;
-    color: white;
+#cardInf .card:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 0.6;
 }
 
 /* END CSS HOME */
@@ -63,4 +92,62 @@ h1, h2, h3, h4, p, a {
 
 /* START CSS KONSULTASI */
 
+#jumbotronKonsultasi {
+    height: 644px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 97px;
+    margin-bottom: 97px;
+}
+
+#welkomKonsultasi {
+    font-size: 36px;
+}
+
+#cariDokter {
+    border-radius: 10px;
+    margin-left: -13px;
+    border: none;
+}
+
+#icKonSearch {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#konsCard .card {
+    border: none;
+}
+
+#konsCard a {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+#konsCard a:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 0.6;
+}
+
+#rowCard {
+    margin-left: 100px;
+}
+
 /* END CSS KONSULTASI */
+
+/* START CSS EDUKASI */
+
+#cardEdu a {
+    color: black;
+    opacity: 1;
+}
+
+#cardEdu a:hover {
+    opacity: 0.6;
+    transition: 0.5s ease-in-out;
+}
+
+/* END CSS EDUKASI */

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\konsultasi;
 use App\Http\Requests\StorekonsultasiRequest;
 use App\Http\Requests\UpdatekonsultasiRequest;
+use Illuminate\Http\Request;
 
 class KonsultasiController extends Controller
 {
@@ -15,7 +16,7 @@ class KonsultasiController extends Controller
      */
     public function index()
     {
-        //
+        return view('konsultasi');
     }
 
     /**

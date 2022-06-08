@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('email');
+            $table->char('password',20);
             $table->timestamps();
         });
     }

@@ -84,9 +84,89 @@ h1, h2, h3, h4, p, a {
 
 /* START CSS RUMAH SAKIT */
 
+#rsTerdekat {
+    color: #1D3557;
+}
+
+#rs{
+    margin-top: 30px;
+}
+
+#rsInf {
+    margin-bottom: 20px;
+}
+
+#jumbotronRS {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 97px;
+}
+
+#rsCard .card {
+    border: none;
+}
+
+#rsCard a {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+#rsCard a:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 0.6;
+}
+
+#rsCard {
+    margin-left: 100px;
+}
+
 /* END CSS RUMAH SAKIT */
 
 /* START CSS APOTIK */
+
+#apotekTerdekat {
+    color: #1D3557;
+}
+
+#apotek{
+    margin-top: 30px;
+}
+
+#apotekInf {
+    margin-bottom: 20px;
+}
+
+#jumbotronApotek {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 97px;
+}
+
+#apotekCard .card {
+    border: none;
+}
+
+#apotekCard a {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+#apotekCard a:hover {
+    transition: 0.5s ease-in-out;
+    opacity: 0.6;
+}
+
+#apotekCard {
+    margin-left: 100px;
+}
 
 /* END CSS APOTIK */
 

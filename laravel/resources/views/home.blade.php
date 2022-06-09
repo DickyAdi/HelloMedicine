@@ -30,7 +30,7 @@
                                 </a>
                             </div>
                             <div class="col-3 d-flex align-items-stretch align-items-center">
-                                <a href="#" style="text-decoration: none;color: black">
+                                <a href="/rsterdekat" style="text-decoration: none;color: black">
                                     <div class="card">
                                         <img src="img/tombolRumahSakit.webp"
                                             class="w-100 rounded-circle card-img-top mx-auto d-block" alt="konsultasi">
@@ -41,7 +41,7 @@
                                 </a>
                             </div>
                             <div class="col-3 d-flex align-items-stretch align-items-center">
-                                <a href="#" style="text-decoration: none;color: black">
+                                <a href="/apotekterdekat" style="text-decoration: none;color: black">
                                     <div class="card">
                                         <img src="img/tombolApotek.webp"
                                             class="w-75 rounded-circle card-img-top mx-auto d-block" alt="konsultasi">
@@ -99,7 +99,7 @@
                         </a>
                     </div>
                     <div class="col-3 align-items-center">
-                        <a href="#" style="text-decoration: none; color:black">
+                        <a href="/rsterdekat" style="text-decoration: none; color:black">
                             <div class="card">
                                 <img src="{{ asset('/img/rumahsakit.jpg') }}" style="border-radius: 5px;">
                                 <div class="card-body">
@@ -109,9 +109,9 @@
                         </a>
                     </div>
                     <div class="col-3 align-items-center">
-                        <a href="#" style="text-decoration: none; color:black">
+                        <a href="/apotekterdekat" style="text-decoration: none; color:black">
                             <div class="card">
-                                <img src="{{ asset('/img/apotek.jpg') }}" class="h-auto" style="border-radius: 5px;">
+                                <img src="{{ asset('/img/Apotek2.jpg') }}" class="h-auto" style="border-radius: 5px;">
                                 <div class="card-body">
                                     <h5 class="card-title text-center fw-bold" style="color: #1D3557">Apotek</h5>
                                 </div>

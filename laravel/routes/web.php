@@ -8,6 +8,8 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerPremiumController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\edukasiController;
+use App\Http\Controllers\rsterdekatController;
+use App\Http\Controllers\apotekterdekatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,5 @@ use App\Http\Controllers\edukasiController;
 Route::get('/', [homeController::class, 'index']);
 Route::get('/konsultasi', [KonsultasiController::class, 'index']);
 Route::get('/edukasi', [edukasiController::class, 'index']);
+Route::get('/rsterdekat', [rsterdekatController::class, 'index']);
+Route::get('/apotekterdekat', [apotekterdekatController::class, 'index']);

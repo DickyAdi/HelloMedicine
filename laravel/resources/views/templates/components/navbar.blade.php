@@ -7,10 +7,10 @@
                     <a class="nav-link"  href="/">Home</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Rumah Sakit terdekat</a>
+                    <a class="nav-link" href="/rsterdekat">Rumah Sakit terdekat</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link" href="#">Apotik terdekat</a>
+                    <a class="nav-link" href="/apotekterdekat">Apotik terdekat</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/konsultasi">Konsultasi</a>

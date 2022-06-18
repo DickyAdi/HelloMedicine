@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\apotekterdekat;
+use App\Models\apotek;
 use Illuminate\Http\Request;
 
 class apotekterdekatController extends Controller
@@ -14,7 +14,10 @@ class apotekterdekatController extends Controller
      */
     public function index()
     {
-        return view('apotekterdekat');
+        $dbApo = apotek::all();
+        return view('apotekterdekat', [
+            "data" => $dbApo
+        ]);
     }
 
     /**
@@ -22,7 +25,7 @@ class apotekterdekatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create() 
     {
         //
     }

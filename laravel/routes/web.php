@@ -10,6 +10,7 @@ use App\Http\Controllers\DokterController;
 use App\Http\Controllers\edukasiController;
 use App\Http\Controllers\rsterdekatController;
 use App\Http\Controllers\apotekterdekatController;
+use App\Http\Controllers\dashAdmin;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,4 @@ Route::get('/konsultasi', [KonsultasiController::class, 'index']);
 Route::get('/edukasi', [edukasiController::class, 'index']);
 Route::get('/rsterdekat', [rsterdekatController::class, 'index']);
 Route::get('/apotekterdekat', [apotekterdekatController::class, 'index']);
+Route::get('/dashAdmin', [dashAdmin::class, 'index']);

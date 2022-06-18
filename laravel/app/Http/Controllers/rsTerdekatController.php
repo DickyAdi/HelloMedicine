@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\rsterdekat;
+use App\Models\rumahSakit;
 use Illuminate\Http\Request;
 
 class rsterdekatController extends Controller
@@ -14,7 +15,11 @@ class rsterdekatController extends Controller
      */
     public function index()
     {
-        return view('rsterdekat');
+        $dbRs = rumahSakit::all();
+
+        return view('rsterdekat', [
+            "data" => $dbRs
+        ]);
     }
 
     /**

@@ -231,3 +231,77 @@ h1, h2, h3, h4, p, a {
 }
 
 /* END CSS EDUKASI */
+
+/* START CSS LOGIN */
+#jumbotronLogin {
+    height: 644px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.nav-home {
+    background: #f8ba10;
+    height: 80px;
+    margin: 0;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.nav-brand img {
+    height: 50;
+}
+
+.nav-brand img:first-child {
+    display: block;
+}
+
+.nav-brand img:nth-child(2) {
+    display: none;
+}
+
+/* END CSS LOGIN */
+
+/* START CSS Registrasi */
+#jumbotronRegistrasi {
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.nav-home {
+    background: #f8ba10;
+    height: 80px;
+    margin: 0;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.nav-brand {
+    color: white;
+    font-weight: bold;
+    margin: 16px;
+}
+
+.nav-brand img {
+    height: 50;
+}
+
+.nav-brand img:first-child {
+    display: block;
+}
+
+.nav-brand img:nth-child(2) {
+    display: none;
+}
+
+/* END CSS Registrasi */

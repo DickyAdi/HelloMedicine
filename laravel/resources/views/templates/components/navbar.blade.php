@@ -15,6 +15,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/konsultasi">Konsultasi</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
             </ul>
         </div>
     </div>

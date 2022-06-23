@@ -37,6 +37,30 @@ h1, h2, h3, h4, p, a {
 /* END CSS UTILITY */
 
 /* START CSS HOME */
+#photoGet {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#jumbotronGetStarted {
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#button{
+    margin-bottom: 30px;
+}
+
+
+/* END CSS HOME */
+
+/* START CSS DASHBOARD */
 
 #jumbotron {
     background-image: url('img/Jumbotron1.webp');
@@ -80,7 +104,7 @@ h1, h2, h3, h4, p, a {
     opacity: 0.6;
 }
 
-/* END CSS HOME */
+/* END CSS DASHBOARD */
 
 /* START CSS RUMAH SAKIT */
 

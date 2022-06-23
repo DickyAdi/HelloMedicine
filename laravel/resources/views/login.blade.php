@@ -1,7 +1,7 @@
 @extends('templates/struct/layouts')
 
 @section('container')
-@include('templates/components/navbar')
+
 <div class="row justify-content-center" style="background-image: url('img/jumbotronKonsultasi.webp')" id="jumbotronLogin">
     <div class="col-lg-3">
         @if(session()->has('success'))

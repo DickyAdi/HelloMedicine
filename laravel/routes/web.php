@@ -25,11 +25,11 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [homeController::class, 'index']);
-Route::get('/konsultasi', [KonsultasiController::class, 'index']);
-Route::get('/edukasi', [edukasiController::class, 'index']);
-Route::get('/rsterdekat', [rsterdekatController::class, 'index']);
-Route::get('/apotekterdekat', [apotekterdekatController::class, 'index']);
+Route::get('/', [homeController::class, 'index']) ->middleware('auth');
+Route::get('/konsultasi', [KonsultasiController::class, 'index'])->middleware('auth');
+Route::get('/edukasi', [edukasiController::class, 'index'])->middleware('auth');
+Route::get('/rsterdekat', [rsterdekatController::class, 'index'])->middleware('auth');
+Route::get('/apotekterdekat', [apotekterdekatController::class, 'index'])->middleware('auth');
 Route::get('/dashAdmin', [dashAdmin::class, 'index']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');

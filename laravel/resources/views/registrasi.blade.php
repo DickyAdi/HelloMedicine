@@ -12,9 +12,9 @@
             <form action="/register" method="post">
                 @csrf
                 <div class="form-floating mt-3">
-                    <input type="text" name="name" class="form-control rounded-top @error('name')is-invalid @enderror" id="name" placeholder="Name" required value="{{ old('name') }}">
+                    <input type="text" name="nama" class="form-control rounded-top @error('nama')is-invalid @enderror" id="name" placeholder="Name" required value="{{ old('nama') }}">
                     <label for="name" style="color:black">Full Name</label>
-                    @error('name')
+                    @error('nama')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

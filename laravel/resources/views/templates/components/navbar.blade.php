@@ -15,9 +15,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/konsultasi">Konsultasi</a>
                 </li>
+                @auth
+                <li class="nav-item">
+                    <form action="/logout" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">Logout</button>
+                    </form>
+                </li>
+                @else
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>
+                @endauth
             </ul>
         </div>
     </div>

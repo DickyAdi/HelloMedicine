@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\edukasi;
 use App\Models\rumahSakit;
 use App\Models\apotek;
+use App\Models\customer;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
         edukasi::factory(10)->create();
         rumahSakit::factory(10)->create();
         apotek::factory(10)->create();
+        customer::factory(10)->create();
 
     }
 }

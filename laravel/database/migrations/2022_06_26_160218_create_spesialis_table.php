@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('edukasis', function (Blueprint $table) {
+        Schema::create('spesialis', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('photo')->default('/public/img/defaultEdukasi.webp');
-            $table->text('exert');
-            $table->text('body');
+            $table->string('spesialis');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('edukasis');
+        Schema::dropIfExists('spesialis');
     }
 };

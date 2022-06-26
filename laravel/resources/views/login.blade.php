@@ -14,7 +14,7 @@
         @if(session()->has('loginError'))
         <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert" id="myAlert">
             {{ session('loginError') }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="myBtn"></button>
+            <button type="button" class="btn-close" data-bs-di smiss="alert" aria-label="Close" id="myBtn"></button>
         </div>
         @endif
 

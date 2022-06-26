@@ -13,6 +13,8 @@ use App\Http\Controllers\apotekterdekatController;
 use App\Http\Controllers\dashAdmin;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\spesialisController;
+use App\Http\Controllers\pembayaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +29,11 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', [homeController::class, 'index']) ->middleware('auth');
 Route::get('/konsultasi', [KonsultasiController::class, 'index'])->middleware('auth');
-Route::get('/edukasi', [edukasiController::class, 'index'])->middleware('auth');
+Route::get('/konsultasi/{spesialis:spesialis}', [KonsultasiController::class, 'show'])->middleware('auth');
+Route::get('pembayaran/{dokter:nama}', [pembayaranController::class, 'index'])->middleware('auth');
+Route::get('/edukasi', [edukasiController::class, 'find3'])->middleware('auth');
+Route::get('/artikel', [edukasiController::class, 'index'])->middleware('auth');
+Route::get('/artikel/{edukasi:title}', [edukasiController::class, 'show'])->middleware('auth');
 Route::get('/rsterdekat', [rsterdekatController::class, 'index'])->middleware('auth');
 Route::get('/apotekterdekat', [apotekterdekatController::class, 'index'])->middleware('auth');
 Route::get('/dashAdmin', [dashAdmin::class, 'index']);

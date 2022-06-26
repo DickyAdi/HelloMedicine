@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="#" class="navbar-brand"><img src="img/group 30.png" height="50"></a>
+    <a href="#" class="navbar-brand"><img src="{{ asset('img/group 30.png') }}" height="50"></a>
     <div class="container-fluid">
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\konsultasi;
+use App\Models\dokter;
+use App\Models\spesialis;
 use App\Http\Requests\StorekonsultasiRequest;
 use App\Http\Requests\UpdatekonsultasiRequest;
 use Illuminate\Http\Request;
@@ -46,9 +48,12 @@ class KonsultasiController extends Controller
      * @param  \App\Models\konsultasi  $konsultasi
      * @return \Illuminate\Http\Response
      */
-    public function show(konsultasi $konsultasi)
+    public function show(spesialis $spesialis)
     {
-        //
+        return view('spesialis', [
+            'data' => $spesialis->spesialis,
+            'dokter' => $spesialis->dokter
+        ]);
     }
 
     /**

@@ -17,8 +17,8 @@ class EdukasiFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->sentence(mt_rand(3, 8)),
-            'exert' => $this->faker->paragraph(mt_rand(3, 8)),
+            'title' => $this->faker->sentence(mt_rand(1,5)),
+            'exert' => $this->faker->paragraph(mt_rand(1,2)),
             'body' => $this->faker->paragraphs(mt_rand(2,4), true)
         ];
     }

@@ -8,9 +8,12 @@ use App\Models\edukasi;
 use App\Models\rumahSakit;
 use App\Models\apotek;
 use App\Models\customer;
+use App\Models\dokter;
+use App\Models\spesialis;
 
 class DatabaseSeeder extends Seeder
 {
+    // SEED SPESIALIS SEEDER DULU SEBELUM SEED DB:SEED
     /**
      * Seed the application's database.
      *
@@ -23,6 +26,8 @@ class DatabaseSeeder extends Seeder
         rumahSakit::factory(10)->create();
         apotek::factory(10)->create();
         customer::factory(10)->create();
+        // spesialis::call(SpesialisSeeder::class);
+        dokter::factory(10)->create();
 
     }
 }

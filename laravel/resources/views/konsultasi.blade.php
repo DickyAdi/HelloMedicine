@@ -32,7 +32,7 @@
                 <div class="container mt-5 d-block" id="konsCard">
                     <div class="row row-cols-6 g-3 mt-2" id="rowCard">
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Dokter Umum">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/umum.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Umum</h5>
@@ -40,7 +40,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Anak">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/anak.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Anak</h5>
@@ -48,7 +48,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Kulit">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/kulit.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Kulit</h5>
@@ -56,7 +56,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/THT">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/tht.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">THT</h5>
@@ -64,7 +64,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Dokter Gigi">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/gigi.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Dokter Gigi</h5>
@@ -72,7 +72,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Kandungan">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/kandungan.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center" style="font-size: 17px">Spesialis Kandungan</h5>
@@ -80,7 +80,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Saraf">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/saraf.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Saraf</h5>
@@ -88,7 +88,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Jantung">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/jantung.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Jantung</h5>
@@ -96,7 +96,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Mata">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/mata.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Mata</h5>
@@ -104,7 +104,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Psikologi Klinis">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/psiko.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Psikologi Klinis</h5>
@@ -112,7 +112,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Bedah">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/bedah.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Bedah</h5>
@@ -120,7 +120,7 @@
                             </a>
                         </div>
                         <div class="col">
-                            <a href="#">
+                            <a href="/konsultasi/Spesialis Lainnya">
                                 <div class="card bg-transparent w-50">
                                     <img src="{{ asset('img/lainnya.png') }}" class="rounded-circle">
                                     <h5 class="card-title text-center">Spesialis Lainnya</h5>

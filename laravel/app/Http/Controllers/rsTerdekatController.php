@@ -6,7 +6,7 @@ use App\Models\rsterdekat;
 use App\Models\rumahSakit;
 use Illuminate\Http\Request;
 
-class rsterdekatController extends Controller
+class rsTerdekatController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -8,7 +8,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\CustomerPremiumController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\edukasiController;
-use App\Http\Controllers\rsterdekatController;
+use App\Http\Controllers\rsTerdekatController;
 use App\Http\Controllers\apotekterdekatController;
 use App\Http\Controllers\dashAdmin;
 use App\Http\Controllers\LoginController;
@@ -34,7 +34,7 @@ Route::get('pembayaran/{dokter:nama}', [pembayaranController::class, 'index'])->
 Route::get('/edukasi', [edukasiController::class, 'find3'])->middleware('auth');
 Route::get('/artikel', [edukasiController::class, 'index'])->middleware('auth');
 Route::get('/artikel/{edukasi:title}', [edukasiController::class, 'show'])->middleware('auth');
-Route::get('/rsterdekat', [rsterdekatController::class, 'index'])->middleware('auth');
+Route::get('/rsterdekat', [rsTerdekatController::class, 'index'])->middleware('auth');
 Route::get('/apotekterdekat', [apotekterdekatController::class, 'index'])->middleware('auth');
 Route::get('/dashAdmin', [dashAdmin::class, 'index']);
 

@@ -23,10 +23,10 @@
         <div class="col-md-6" id="optBayar">
             <div class="container collapse show collapse-horizontal" id="digital">
                 <div class="row" id="btnBayar">
-                    <button class="btn btn-light fw-bold"><img src="{{ asset('/img/gopay.png') }}" class="w-50 h-50"> Gopay</button>
-                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/dana.png') }}" class="w-50 h-50"> Dana</button>
-                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/shopeePay.png') }}" class="w-50 h-50"> Shopee Pay</button>
-                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/linkAja.png') }}" class="w-50 h-50"> LinkAja</button>
+                    <button class="btn btn-light fw-bold"><img src="{{ asset('/img/gopay.png') }}" class="w-50 h-80"> Gopay</button>
+                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/dana.png') }}" class="w-50 h-80"> Dana</button>
+                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/shopeePay.png') }}" class="w-50 h-80"> Shopee Pay</button>
+                    <button class="btn btn-light mt-2 fw-bold"><img src="{{ asset('/img/linkAja.png') }}" class="w-50 h-80"> LinkAja</button>
                 </div>
             </div>
             <div class="container collapse collapse-horizontal border" id="debit">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-        <div class="row mt-2">
+        <div class="row mt-5">
             <div class="col d-flex justify-content-center">
                 <button class="btn btn-primary">Bayar</button>
             </div>

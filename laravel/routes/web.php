@@ -29,6 +29,7 @@ use App\Http\Controllers\pembayaranController;
 
 Route::get('/', [homeController::class, 'index']) ->middleware('auth');
 Route::get('/konsultasi', [KonsultasiController::class, 'index'])->middleware('auth');
+Route::get('/konsultasi/chat/{dokter:nama}', [KonsultasiController::class, 'chat'])->middleware('auth');
 Route::get('/konsultasi/{spesialis:spesialis}', [KonsultasiController::class, 'show'])->middleware('auth');
 Route::get('pembayaran/{dokter:nama}', [pembayaranController::class, 'index'])->middleware('auth');
 Route::get('/edukasi', [edukasiController::class, 'find3'])->middleware('auth');
@@ -36,7 +37,13 @@ Route::get('/artikel', [edukasiController::class, 'index'])->middleware('auth');
 Route::get('/artikel/{edukasi:title}', [edukasiController::class, 'show'])->middleware('auth');
 Route::get('/rsterdekat', [rsTerdekatController::class, 'index'])->middleware('auth');
 Route::get('/apotekterdekat', [apotekterdekatController::class, 'index'])->middleware('auth');
-Route::get('/dashAdmin', [dashAdmin::class, 'index']);
+Route::get('/dashAdmin', [dashAdmin::class, 'index'])->middleware('auth');
+Route::get('/dashAdmin/edukasiDash', [dashAdmin::class, 'edukasi'])->middleware('auth');
+Route::get('/dashAdmin/edukasiDash/edit/{edukasi}', [dashAdmin::class, 'editEdukasi'])->middleware('auth');
+Route::put('/dashAdmin/edukasiDash/{edukasi}/edit', [dashAdmin::class, 'updateEdukasi'])->middleware('auth');#####
+Route::delete('/dashAdmin/edukasiDash/delete/{edukasi}', [dashAdmin::class, 'deleteEdukasi'])->middleware('auth');
+Route::get('/dashAdmin/edukasiDash/create', [dashAdmin::class, 'formEdukasi'])->middleware('auth');
+Route::post('/dashAdmin/edukasiDash/create', [dashAdmin::class, 'createEdukasi'])->middleware('auth');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);

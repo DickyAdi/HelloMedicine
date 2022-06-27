@@ -48,7 +48,7 @@
     </div>
         <div class="row mt-5">
             <div class="col d-flex justify-content-center">
-                <button class="btn btn-primary">Bayar</button>
+                <a href="/konsultasi/chat/{{ $data->nama }}"  class="btn btn-primary">Bayar</a>
             </div>
         </div>
 </div>

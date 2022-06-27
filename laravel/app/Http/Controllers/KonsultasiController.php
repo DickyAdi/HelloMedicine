@@ -42,6 +42,12 @@ class KonsultasiController extends Controller
         //
     }
 
+    public function chat(dokter $dokter) {
+        return view('chat', [
+            'data' => $dokter
+        ]);
+    }
+
     /**
      * Display the specified resource.
      *

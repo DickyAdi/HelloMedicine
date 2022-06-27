@@ -14,7 +14,56 @@ class dashAdmin extends Controller
      */
     public function index()
     {
-        return view('dashboardAdmin');
+        return view('/dashboard/index');
+    }
+
+    public function edukasi()
+    {
+        return view('/dashboard/edukasiDash', [
+            'data' => edukasi::all()
+        ]);
+    }
+
+    public function formEdukasi()
+    {
+        return view('createEdukasi');
+    }
+
+    public function createEdukasi(Request $request)
+    {
+        $validate = $request ->validate([
+            'title' => 'required|max:20|unique',
+            'exert' => 'required|max:30',
+            'body' => 'required'
+        ]);
+
+        edukasi::create($validate);
+        return redirect('dashAdmin/edukasiDash')->with('success', 'New Edukasi was created');
+    }
+
+    public function editEdukasi(edukasi $edukasi)
+    {
+        return view('editEdukasi', [
+            'data' => $edukasi
+        ]);
+    }
+
+    public function updateEdukasi(Request $request, edukasi $edukasi)
+    {
+        $validate = $request ->validate([
+            'title' => 'required|max:20|unique',
+            'exert' => 'required|max:30',
+            'body' => 'required'
+        ]);
+        // edukasi::where('id', $edukasi->id)->update($validate);
+        edukasi::updateOrCreate($validate);
+        return redirect('dashAdmin/edukasiDash')->with('success', 'Edukasi Edited');
+    }
+
+    public function deleteEdukasi(edukasi $edukasi)
+    {
+        edukasi::destroy($edukasi->id);
+        return redirect('/dashAdmin/edukasiDash')->with('success', 'Edukasi was deleted!');
     }
 
     /**
